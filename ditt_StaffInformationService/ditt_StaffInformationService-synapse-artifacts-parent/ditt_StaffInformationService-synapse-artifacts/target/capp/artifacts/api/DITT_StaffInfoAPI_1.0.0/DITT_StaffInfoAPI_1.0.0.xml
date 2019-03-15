@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/ditt_staffinfoapi_1.0.0" name="DITT_StaffInfoAPI_1.0.0" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/staffinfobyid/{eid}">
+        <inSequence>
+            <header name="Accept" scope="transport" value="application/json"/>
+            <header action="remove" name="Content-Type" scope="transport"/>
+            <property action="remove" name="REST_URL_POSTFIX" scope="axis2"/>
+            <send>
+                <endpoint key="gov:datahub/DITT/endpoints/DITT_StaffInformationService_getStaffInformationByEno_dataservice_endpoint_1.0.0.xml"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

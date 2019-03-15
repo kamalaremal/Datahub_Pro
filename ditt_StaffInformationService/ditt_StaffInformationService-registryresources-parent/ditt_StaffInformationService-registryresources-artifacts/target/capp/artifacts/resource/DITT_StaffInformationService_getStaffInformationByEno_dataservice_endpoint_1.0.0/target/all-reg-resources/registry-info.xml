@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <item>
+        <file>DITT_StaffInformationService_getStaffInformationByEno_dataservice_endpoint_1.0.0.xml</file>
+        <path>/_system/governance/datahub/DITT/endpoints</path>
+        <mediaType>application/vnd.wso2.esb.endpoint</mediaType>
+    </item>
+</resources>

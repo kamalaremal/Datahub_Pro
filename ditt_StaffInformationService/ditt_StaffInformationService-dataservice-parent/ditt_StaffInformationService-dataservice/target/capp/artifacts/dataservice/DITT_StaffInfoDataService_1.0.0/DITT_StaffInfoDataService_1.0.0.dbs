@@ -1,0 +1,20 @@
+<data name="DITT_StaffInfoDataService_1.0.0" serviceGroup="DITT_StaffInfoDataService_1.0.0" serviceNamespace="http://staffinformation.ditt.gov.bt">
+    <description/>
+    <config id="DITT_StaffInfo_DS">
+        <property name="carbon_datasource_name">DITT_StaffInfo_DS</property>
+    </config>
+    <query id="getStaffInformationByEIDQuery" useConfig="DITT_StaffInfo_DS">
+        <sql>SELECT * FROM em_details WHERE em_id= :eid</sql>
+        <result element="employees" rowName="employee">
+            <element column="em_id" name="em_id" xsdType="xs:string"/>
+            <element column="em_name" name="em_name" xsdType="xs:string"/>
+            <element column="em_designation" name="em_designation" xsdType="xs:string"/>
+        </result>
+        <param name="eid" sqlType="INTEGER"/>
+    </query>
+    <resource method="GET" path="employees">
+        <call-query href="getStaffInformationByEIDQuery">
+            <with-param name="eid" query-param="eid"/>
+        </call-query>
+    </resource>
+</data>

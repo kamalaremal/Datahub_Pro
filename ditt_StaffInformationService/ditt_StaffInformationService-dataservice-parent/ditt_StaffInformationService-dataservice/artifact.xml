@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="DITT_StaffInfoDataService_1.0.0" groupId="bt.gov.ditt.dataservice" version="1.0.0" type="service/dataservice" serverRole="DataServicesServer">
+        <file>dataservice/DITT_StaffInfoDataService_1.0.0.dbs</file>
+    </artifact>
+</artifacts>

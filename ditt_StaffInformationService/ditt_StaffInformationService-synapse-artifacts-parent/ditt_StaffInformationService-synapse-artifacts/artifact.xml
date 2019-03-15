@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="DITT_StaffInfoAPI_1.0.0" groupId="bt.gov.ditt.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/DITT_StaffInfoAPI_1.0.0.xml</file>
+    </artifact>
+</artifacts>

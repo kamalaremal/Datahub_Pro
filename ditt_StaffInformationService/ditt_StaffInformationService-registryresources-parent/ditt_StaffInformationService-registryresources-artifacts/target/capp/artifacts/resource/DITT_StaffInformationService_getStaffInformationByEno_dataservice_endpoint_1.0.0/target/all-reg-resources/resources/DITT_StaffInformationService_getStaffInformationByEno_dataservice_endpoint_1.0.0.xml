@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="DITT_StaffInformationService_getStaffInformationByEno_dataservice_endpoint_1.0.0" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" uri-template="http://172.16.165.78:9763/services/DITT_StaffInfoDataService_1.0.0.HTTPEndpoint/employees?eid={uri.var.eid}">
+        <timeout>
+            <duration>10000</duration>
+            <responseAction>fault</responseAction>
+        </timeout>
+    </http>
+</endpoint>
